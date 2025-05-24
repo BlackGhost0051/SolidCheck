@@ -2,9 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>SOLID Check</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown.min.css">
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
+    <h1>Solid Check</h1>
+    <div id="uploadContainer">
+        <h3>Upload Your Code</h3>
+        <input type="file" id="codefile">
+        <button id="submitBtn">Verify SOLID</button>
+    </div>
 
+
+    <div id="result"></div>
 </body>
 </html>
