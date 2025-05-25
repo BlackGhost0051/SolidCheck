@@ -13,8 +13,21 @@ body {
 
 
 #uploadContainer {
+    height: 30ex;
     display: flex;
     flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    width: 100%;
+    max-width: 60ex;
+}
+#textContainer{
+    height: 30ex;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
     gap: 1rem;
     align-items: center;
     margin-bottom: 2rem;
@@ -32,7 +45,18 @@ input[type="file"] {
     cursor: pointer;
     transition: border-color 0.2s;
     width: 100%;
-    max-width: 400px;
+    max-width: 80ex;
+}
+
+textarea {
+    width: 100%;
+    max-width: 80ex;
+    padding: 1rem;
+    background-color: #161b22;
+    color: #c9d1d9;
+    border: 1px solid #30363d;
+    border-radius: 0.5rem;
+    resize: vertical;
 }
 
 input[type="file"]::file-selector-button {
@@ -46,8 +70,7 @@ input[type="file"]::file-selector-button {
     transition: background-color 0.2s ease-in-out;
 }
 
-
-#submitBtn {
+.btn{
     background-color: #000;
     color: white;
     border: none;
@@ -57,6 +80,7 @@ input[type="file"]::file-selector-button {
     font-size: 1rem;
     transition: background-color 0.2s ease-in-out;
 }
+
 
 
 .markdown-body {
@@ -97,4 +121,20 @@ input[type="file"]::file-selector-button {
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+
+
+#methodToggle {
+    margin-bottom: 1rem;
+    border: solid 1px white;
+    border-radius: 1ex;
+}
+
+.active_method{
+    background: #2b4363;
+}
+
+#result{
+    margin-top: 5ex;
+    margin-bottom: 5ex;
 }
