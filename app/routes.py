@@ -10,13 +10,19 @@ def home():
 
 @current_app.route('/solid', methods=['POST'])
 def solid():
-    uploaded_file = request.files.get('codefile')
-    if not uploaded_file:
-        return "<p>No file uploaded.</p>"
+    code_content = None
 
-    code_content = uploaded_file.read().decode('utf-8')
+    if 'codefile' in request.files:
+        uploaded_file = request.files.get('codefile')
+        if uploaded_file:
+            code_content = uploaded_file.read().decode('utf-8')
+    elif 'code' in request.form:
+        code_content = request.form['code']
+
+    if not code_content:
+        return "<p>No code provided.</p>"
+
     markdown_result = AiManager.verify_solid(code_content)
     html_result = markdown.markdown(markdown_result, extensions=['fenced_code', 'codehilite'])
-
-    # Return HTML as plain string, not full page
     return render_template_string('<div class="markdown-body">{{ result|safe }}</div>', result=html_result)
+

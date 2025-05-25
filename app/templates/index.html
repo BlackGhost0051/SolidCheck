@@ -9,13 +9,23 @@
 </head>
 <body>
     <h1>Solid Check</h1>
+
+    <div id="methodToggle">
+        <button id="textMethodBtn" class="btn">Text</button>
+        <button id="fileMethodBtn" class="btn active_method">File</button>
+    </div>
+
     <div id="uploadContainer">
         <h3>Upload Your Code</h3>
         <input type="file" id="codefile">
-        <button id="submitBtn">Verify SOLID</button>
     </div>
 
+    <div id="textContainer">
+        <h3>Enter Your Code</h3>
+        <textarea id="codeInput" rows="10" placeholder="Paste your code here..."></textarea>
+    </div>
 
+    <button id="submitBtn" class="btn">Verify SOLID</button>
     <div id="result"></div>
 </body>
 </html>
