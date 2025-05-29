@@ -4,3 +4,19 @@
 
 
 ## Run
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/YourUsername/SolidCheck.git
+   cd SolidCheck
+    ```   
+
+2. **Install dependencies**:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+2. **Run the application**:
+    ```bash
+    python run.py
+    ```
