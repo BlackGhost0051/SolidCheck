@@ -12,9 +12,17 @@ class AiManager:
     @staticmethod
     def verify_solid(code: str) -> str:
         message = f"""
-        I am a software developer and would like you to verify and refactor the following code according to the SOLID principles. Please include an explanation for each issue you find and how your suggested changes improve the code.
+        You are an expert software engineer. I’d like you to review and refactor the following code based on the SOLID principles.
 
-        Here’s a brief reminder of what SOLID means:
+        Your tasks are:
+        
+        1. Identify and explain any violations of the SOLID principles in the code.
+        2. Refactor the code to comply with each violated principle.
+        3. Provide a brief explanation for each change and how it improves the design.
+
+
+
+        SOLID Principles Reminder:
 
         S – Single Responsibility Principle**: A class should have one and only one reason to change.
         O – Open/Closed Principle**: Software entities should be open for extension but closed for modification.
@@ -22,9 +30,9 @@ class AiManager:
         I – Interface Segregation Principle**: Clients should not be forced to depend on interfaces they do not use.
         D – Dependency Inversion Principle**: High-level modules should not depend on low-level modules; both should depend on abstractions.
 
-        Please analyze the following Python code for SOLID violations, explain the problems, and provide a refactored version that follows the SOLID principles:
+        Please be thorough and constructive in your analysis.
 
-        CODE:
+        Code to review:
         {code}
         """
 
