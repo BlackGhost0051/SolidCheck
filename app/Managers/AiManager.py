@@ -54,7 +54,11 @@ class AiManager:
 
         if response.status_code != 200:
             print(f"Error: {response.status_code} - {response.text}")
-            return "Error communicating with Gemini API."
+
+            error_json = response.json()
+            error_message = error_json.get("error", {}).get("message", "Unknown error occurred")
+
+            return f"Error communicating with Gemini API: {error_message}"
 
         data = response.json()
 
