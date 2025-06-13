@@ -7,7 +7,7 @@ How It Works?
 
 1. Sends a formatted prompt including the SOLID explanation and user code to Gemini API.
 2. Parses the AI response.
-3. Returns a markdown-formatted analysis and refactored version of the code.
+3. Return a analysis and refactored version of the code.
 
 
 
