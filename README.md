@@ -2,7 +2,14 @@
 
 **Solid Check** is a web-based tool built with Flask that checks your code for adherence to the SOLID principles.
 
-It use flask in backend. User can send file or text. App send message to gemini 2.0 AI and verify SOLID.
+How It Works?
+
+
+1. Sends a formatted prompt including the SOLID explanation and user code to Gemini API.
+2. Parses the AI response.
+3. Returns a markdown-formatted analysis and refactored version of the code.
+
+
 
 SOLID:
 - S – **Single Responsibility Principle**: A class should have one and only one reason to change.
@@ -76,14 +83,6 @@ SOLID:
 ├── requirements.txt
 └── run.py
 ```
-
-## How It Works
-
-`AiManager.verify_solid(code: str)`
-
-1. Sends a formatted prompt including the SOLID explanation and user code to Gemini API.
-2. Parses the AI response.
-3. Returns a markdown-formatted analysis and refactored version of the code.
 
 ## Configuration
 
