@@ -13,9 +13,10 @@ SOLID:
 
 ## Images
 
-![](https://github.com/BlackGhost0051/SolidCheck/app/img/1.png)
-![](https://github.com/BlackGhost0051/SolidCheck/app/img/2.png)
-![](https://github.com/BlackGhost0051/SolidCheck/app/img/3.png)
+![](https://github.com/BlackGhost0051/SolidCheck/blob/master/app/img/1.png)
+![](https://github.com/BlackGhost0051/SolidCheck/blob/master/app/img/2.png)
+![](https://github.com/BlackGhost0051/SolidCheck/blob/master/app/img/3.png)
+
 
 
 
