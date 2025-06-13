@@ -94,10 +94,3 @@ Contains sensitive configuration such as:
 class Config:
     DEBUG = True
 ```
-
-
-tytul wstemp opis i testy z image
-
-
-
-`t_gadek@atar.edu.pl`
