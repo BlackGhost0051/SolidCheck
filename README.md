@@ -1,5 +1,7 @@
 # Solid Check
 
+Author: `Black Ghost`
+
 **Solid Check** is a web-based tool built with Flask that checks your code for adherence to the SOLID principles.
 
 How It Works?
@@ -23,13 +25,6 @@ SOLID:
 |![](https://github.com/BlackGhost0051/SolidCheck/blob/master/app/img/1.png)|![](https://github.com/BlackGhost0051/SolidCheck/blob/master/app/img/2.png)| ![](https://github.com/BlackGhost0051/SolidCheck/blob/master/app/img/3.png) |
 |:-:|:-:|:---------------------------------------------------------------------------:|
 |1|2|                                      3                                      |
-
-
-
-
-
-
-
 
 
 
