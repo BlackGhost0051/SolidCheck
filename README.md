@@ -1,9 +1,27 @@
-# 🧠 Solid Check
+# Solid Check
 
 **Solid Check** is a web-based tool built with Flask that checks your code for adherence to the SOLID principles.
 
+It use flask in backend. User can send file or text. App send message to gemini 2.0 AI and verify SOLID.
 
-## 🚀 Getting Started
+SOLID:
+- S – **Single Responsibility Principle**: A class should have one and only one reason to change.
+- O – **Open/Closed Principle**: Software entities should be open for extension but closed for modification.
+- L – **Liskov Substitution Principle**: Subtypes must be substitutable for their base types without altering correctness.
+- I – **Interface Segregation Principle**: Clients should not be forced to depend on interfaces they do not use.
+- D – **Dependency Inversion Principle**: High-level modules should not depend on low-level modules; both should depend on abstractions.
+
+## Images
+
+![](https://github.com/BlackGhost0051/SolidCheck/app/img/1.png)
+![](https://github.com/BlackGhost0051/SolidCheck/app/img/2.png)
+![](https://github.com/BlackGhost0051/SolidCheck/app/img/3.png)
+
+
+
+
+
+## Getting Started
 
 1. **Clone the repository**:
    ```bash
@@ -33,7 +51,7 @@
     ```
    Access it via `http://127.0.0.1:5000`.
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 ├── app
@@ -54,7 +72,7 @@
 └── run.py
 ```
 
-## 🧠 How It Works
+## How It Works
 
 `AiManager.verify_solid(code: str)`
 
@@ -62,7 +80,7 @@
 2. Parses the AI response.
 3. Returns a markdown-formatted analysis and refactored version of the code.
 
-## 🔐 Configuration
+## Configuration
 
 `Config` Class
 
@@ -72,3 +90,10 @@ Contains sensitive configuration such as:
 class Config:
     DEBUG = True
 ```
+
+
+tytul wstemp opis i testy z image
+
+
+
+`t_gadek@atar.edu.pl`

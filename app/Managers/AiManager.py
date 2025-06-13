@@ -24,11 +24,11 @@ class AiManager:
 
         SOLID Principles Reminder:
 
-        S – Single Responsibility Principle**: A class should have one and only one reason to change.
-        O – Open/Closed Principle**: Software entities should be open for extension but closed for modification.
-        L – Liskov Substitution Principle**: Subtypes must be substitutable for their base types without altering correctness.
-        I – Interface Segregation Principle**: Clients should not be forced to depend on interfaces they do not use.
-        D – Dependency Inversion Principle**: High-level modules should not depend on low-level modules; both should depend on abstractions.
+        S – Single Responsibility Principle: A class should have one and only one reason to change.
+        O – Open/Closed Principle: Software entities should be open for extension but closed for modification.
+        L – Liskov Substitution Principle: Subtypes must be substitutable for their base types without altering correctness.
+        I – Interface Segregation Principle: Clients should not be forced to depend on interfaces they do not use.
+        D – Dependency Inversion Principle: High-level modules should not depend on low-level modules; both should depend on abstractions.
 
         Please be thorough and constructive in your analysis.
 
